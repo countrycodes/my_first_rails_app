@@ -1,7 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  kia: 
+  make: MyString
+  model: MyString
+  year: 1
 
 two:
-  kia: 
+  make: MyString
+  model: MyString
+  year: 1

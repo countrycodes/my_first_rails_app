@@ -14,7 +14,9 @@ class CarsTest < ApplicationSystemTestCase
     visit cars_url
     click_on "New Car"
 
-    fill_in "Kia", with: @car.kia
+    fill_in "Make", with: @car.make
+    fill_in "Model", with: @car.model
+    fill_in "Year", with: @car.year
     click_on "Create Car"
 
     assert_text "Car was successfully created"
@@ -25,7 +27,9 @@ class CarsTest < ApplicationSystemTestCase
     visit cars_url
     click_on "Edit", match: :first
 
-    fill_in "Kia", with: @car.kia
+    fill_in "Make", with: @car.make
+    fill_in "Model", with: @car.model
+    fill_in "Year", with: @car.year
     click_on "Update Car"
 
     assert_text "Car was successfully updated"
